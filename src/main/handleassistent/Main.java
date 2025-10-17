@@ -1,15 +1,24 @@
+import Brukerprofiler.FileToProduct;
 import Brukerprofiler.Inventory;
 import Brukerprofiler.Product;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 public class Main {
-    Product product = new Product();
     public static void main(String[] args) {
-        Inventory f = new Inventory();
-        f.addVarer("Poteter");
-        f.addVarer("Epler");
-        for (String vare : f.getVarer()) {
-            System.out.println(vare);
+        FileToProduct ftp = new FileToProduct();
+        try {
+            ftp.loadFromCsv("data/products.csv");
+            int i = 0;
+            for (Product p : ftp.getProducts()) {
+                i++;
+                System.out.println(p.getOrganic() + " " + i);
+            }
         }
-
+        catch (IOException  e) {
+            System.err.println("Kunne ikke lese filen: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }

@@ -1,34 +1,38 @@
 package Brukerprofiler;
 
 public class Product {
+    private final String productId;
+    private final String gtin;
     private final String name;
-    private final double price;
-    private final boolean isVegan;
-    private final boolean isGlutenFree;
-    private final boolean isLactoseFree;
-    public Product(String name, double price, boolean isVegan, boolean isGlutenFree,  boolean isLactoseFree) {
+    private final String description;
+    private final String price;
+    private final String pricePerUnit;
+    private final String unit;
+    private final String allergens;
+    private final String carbonFootprintGram;
+    private final String organic;
+    public Product(String productId, String gtin, String name, String description, String price, String pricePerUnit, String unit, String allergens, String carbonFootprintGram, String organic) {
+        this.productId = productId;
+        this.gtin = gtin;
         this.name = name;
+        this.description = description;
         this.price = price;
-        this.isVegan = isVegan;
-        this.isGlutenFree = isGlutenFree;
-        this.isLactoseFree = isLactoseFree;
+        this.pricePerUnit = pricePerUnit;
+        this.unit = unit;
+        this.allergens = allergens;
+        this.carbonFootprintGram = carbonFootprintGram;
+        this.organic = organic;
     }
 
+    //Getters
+    public String getProductId() {return productId;}
+    public String getGtin() {return gtin;}
     public String getName() {return name;}
-    public double getPrice() {return price;}
-    public boolean isVegan() {return isVegan;}
-    public boolean isGlutenFree() {return isGlutenFree;}
-    public boolean isLactoseFree() {return isLactoseFree;}
-
-    @Override
-    public String toString() {
-        StringBuilder answer = new StringBuilder();
-        answer.append("Name: " + this.name + "\n");
-        answer.append(" Price: " + this.price);
-        answer.append(" Vegan: " + this.isVegan);
-        answer.append(" Gluten free: " + this.isGlutenFree);
-        answer.append(" Lactose free: " + this.isLactoseFree);
-
-        return answer.toString();
-    }
+    public String getDescription() {return description;}
+    public String getPrice() {return price;}
+    public String getPricePerUnit() {return pricePerUnit;}
+    public String getUnit() {return unit;}
+    public String getAllergens() {return allergens;}
+    public String getCarbonFootprintGram() {return carbonFootprintGram;}
+    public String getOrganic() {return organic;}
 }
