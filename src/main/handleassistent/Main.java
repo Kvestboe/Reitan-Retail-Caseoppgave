@@ -1,7 +1,5 @@
-//package main.handleassistent;
-
-    public class Main {
-        public static void main(String[] args) {
-            System.out.println("Hei");
-        }
+public class Main {
+	public static void main(String[] args) {
+        System.out.println("Hei");
     }
+}
