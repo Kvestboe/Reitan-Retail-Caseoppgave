@@ -1,0 +1,146 @@
+productId,gtin,name,description,price,pricePerUnit,unit,allergens,carbonFootprintGram,organic
+1001,7091234000013,Grovt brød 750 g,"Nybakt, grovt brød med høy fiber.",44.18,58.91,kg,"hvete, gluten, melk",325,False
+1002,7091234000020,Fint brød 750 g,Luftig hverdagsbrød.,29.19,38.92,kg,"hvete, gluten",404,False
+1003,7091234000037,Surdeigsbrød 800 g,Langtidshevet med sprø skorpe.,25.95,32.44,kg,"hvete, gluten",395,False
+1004,7091234000044,Rundstykker 600 g,6 stk grove rundstykker.,43.06,71.77,kg,"hvete, gluten, sesam",874,False
+1005,7091234000051,Polarbrød 480 g,"Myke brødskiver, 12 stk.",46.04,95.92,kg,"hvete, gluten, melk",729,False
+1006,7091234000068,Fullkorns tortillas 400 g,8 stk fullkornstortilla.,33.35,83.38,kg,"hvete, gluten",306,False
+1007,7091234000075,Glutenfritt brød 600 g,"Saftig, glutenfritt brød.",35.21,58.68,kg,egg,459,False
+1008,7091234000082,Knekkebrød 300 g,Sprø knekkebrød med frø. Organisk,35.1,117,kg,"sesam, gluten",394,True
+1009,7091234000099,Bagetter 500 g,2 stk lyse bagetter.,50.42,100.84,kg,"hvete, gluten",570,False
+1010,7091234000105,Speltbrød 750 g,Brød av speltmel.,41.09,54.79,kg,gluten,687,False
+1011,7091234000112,Helmelk 1 l,Fyldig helmelk.,52.32,52.32,l,"melk, laktose",1766,False
+1012,7091234000129,Lettmelk 1 l,"Lettmelk 1,0% fett.",46.71,46.71,l,"melk, laktose",593,False
+1013,7091234000136,Skummet melk 1 l,Skummet melk.,28.02,28.02,l,"melk, laktose",663,False
+1014,7091234000143,Yoghurt naturell 500 g,Naturell yoghurt.,32.11,64.22,kg,"melk, laktose",1428,False
+1015,7091234000150,Gresk yoghurt 350 g,Kremet gresk yoghurt.,22.32,63.77,kg,"melk, laktose",1227,False
+1016,7091234000167,Smør 250 g,Saltet meierismør.,46.58,186.32,kg,"melk, laktose",646,False
+1017,7091234000174,Rømme 300 g,Lettrømme 18%.,39.04,130.13,kg,"melk, laktose",1001,False
+1018,7091234000181,Cottage cheese 420 g,Mager cottage cheese.,27.15,64.64,kg,"melk, laktose",1640,False
+1019,7091234000198,Norvegia skivet 300 g,Mild gulost.,52.93,176.43,kg,"melk, laktose",614,False
+1020,7091234000204,Jarlsberg blokk 500 g,Smaksrik gulost. Organisk,51.23,102.46,kg,"melk, laktose",1321,True
+1021,7091234000211,Kjøttdeig storfe 400 g,10% fett.,149.14,372.85,kg,ingen,11792,False
+1022,7091234000228,Karbonadedeig 400 g,5% fett.,97.4,243.5,kg,ingen,10017,False
+1023,7091234000235,Kyllingfilet 700 g,"Naturell, 3-4 stk.",65.83,94.04,kg,ingen,11697,False
+1024,7091234000242,Svinefilet 600 g,Indrefilet av svin.,88.55,147.58,kg,ingen,9043,False
+1025,7091234000259,Bacon skivet 150 g,Sprøstekt potensiale. Organisk,159.69,1064.6,kg,ingen,10848,True
+1026,7091234000266,Kyllingkjøttdeig 400 g,10% fett.,40.89,102.22,kg,ingen,4296,False
+1027,7091234000273,Pølser wiener 500 g,8 stk.,134.01,268.02,kg,ingen,9416,False
+1028,7091234000280,Kjøttboller 500 g,Klassiske kjøttboller.,109.49,218.98,kg,ingen,10168,False
+1029,7091234000297,Lammeskav 400 g,Tynne skiver av lam.,142.6,356.5,kg,ingen,2688,False
+1030,7091234000303,Skinke pålegg 150 g,Kokt skinke i skiver.,102.12,680.8,kg,ingen,6871,False
+1031,7091234000310,Laksefilet 500 g,"2-3 stk, uten skinn.",72.17,144.34,kg,fisk,3058,False
+1032,7091234000327,Torskefilet 400 g,Benfri filet.,125.1,312.75,kg,fisk,2278,False
+1033,7091234000334,Fiskekaker 400 g,Høy andel fisk.,80.92,202.3,kg,"fisk, melk, gluten",1635,False
+1034,7091234000341,Makrell i tomat 170 g,Pålegg i boks.,96.67,568.65,kg,fisk,2014,False
+1035,7091234000358,Reker i lake 200 g,Skrelte reker.,39.39,196.95,kg,skalldyr,3372,False
+1036,7091234000365,Sild i glass 380 g,Krydret sild.,78.63,206.92,kg,"fisk, sulfitt",1658,False
+1037,7091234000372,Tunfisk i vann 185 g,Naturlig smak. Organisk,119.8,647.57,kg,fisk,2459,True
+1038,7091234000389,Fish fingers 450 g,Panerte fiskepinner.,125.36,278.58,kg,"fisk, gluten",1522,False
+1039,7091234000396,Røkelaks skivet 200 g,Tynne skiver. Organisk,117.92,589.6,kg,fisk,3381,True
+1040,7091234000402,Kaviar tube 190 g,Mild kaviar.,77.03,405.42,kg,fisk,3451,False
+1041,7091234000419,Epler,Saftige røde epler. Kilopris,44.9,44.9,kg,ingen,296,False
+1042,7091234000426,Bananer,Modne bananer. Kilopris. Organisk,40.21,40.21,kg,ingen,182,True
+1043,7091234000433,Appelsiner,Søte appelsiner. Kilopris,49.81,49.81,kg,ingen,271,False
+1044,7091234000440,Druer grønne 500 g,Kjernefrie. Organisk,28.06,56.12,kg,ingen,206,True
+1045,7091234000457,Jordbær 500 g,Friske bær.,10.84,21.68,kg,ingen,363,False
+1046,7091234000464,Blåbær 300 g,Norske blåbær. Organisk,10.29,34.3,kg,ingen,110,True
+1047,7091234000471,Pærer,Sprø og søte. Kilopris,11.26,11.26,kg,ingen,249,False
+1048,7091234000488,Mango 400 g,Spiseklar.,21.14,52.85,kg,ingen,328,False
+1049,7091234000495,Ananas,Hel ananas. Kilopris,38.93,38.93,kg,ingen,372,False
+1050,7091234000501,Sitron 500 g,Aromatisk. Organisk,41.38,82.76,kg,ingen,288,True
+1051,7091234000518,Gulrøtter,Søt og sprø. Kilopris,32.38,32.38,kg,ingen,261,False
+1052,7091234000525,Poteter 2 kg,Kokefaste.,39.96,19.98,kg,ingen,107,False
+1053,7091234000532,Løk,Gul løk. Kilopris,31.91,31.91,kg,ingen,111,False
+1054,7091234000549,Paprika rød 250 g,Søt paprika. Organisk,37.62,150.48,kg,ingen,135,True
+1055,7091234000556,Agurk 350 g,Knasende sprø. Organisk,27.84,79.54,kg,ingen,151,True
+1056,7091234000563,Tomater 600 g,Cluster tomater.,25.12,41.87,kg,ingen,118,False
+1057,7091234000570,Brokkoli 500 g,Hel brokkoli.,39.67,79.34,kg,ingen,130,False
+1058,7091234000587,Salat miks 150 g,Vasket og klar.,28,186.67,kg,ingen,87,False
+1059,7091234000594,Hvitløk 100 g,2-3 kinesiske hvitløk.,39.4,394,kg,ingen,165,False
+1060,7091234000600,Avokado 300 g,2 stk modne. Organisk,15.91,53.03,kg,ingen,285,True
+1061,7091234000617,Spaghetti 500 g,Klassisk pasta.,10.15,20.3,kg,"hvete, gluten",549,False
+1062,7091234000624,Fullkornspasta 500 g,Mer fiber.,64.96,129.92,kg,"hvete, gluten",442,False
+1063,7091234000631,Basmatiris 1 kg,Lange slanke korn.,61.14,61.14,kg,ingen,719,False
+1064,7091234000648,Jasminris 1 kg,Aromatisk.,20.84,20.84,kg,ingen,453,False
+1065,7091234000655,Havregryn 1 kg,Store havregryn.,50.54,50.54,kg,gluten,705,False
+1066,7091234000662,Hvetemel 1 kg,Siktet.,14,14,kg,"hvete, gluten",748,False
+1067,7091234000679,Sukker 1 kg,Finkornet.,69.69,69.69,kg,ingen,311,False
+1068,7091234000686,Kaffe filtermalt 250 g,100% arabica.,15.61,62.44,kg,ingen,340,False
+1069,7091234000693,Te svart 100 g,20 poser. Organisk,57.26,572.6,kg,ingen,390,True
+1070,7091234000709,Knekkebrød grovt 250 g,Med frø.,72.32,289.28,kg,"sesam, gluten",402,False
+1071,7091234000716,Mais på boks 300 g,Søt mais.,53.36,177.87,kg,ingen,579,False
+1072,7091234000723,Kikerter på boks 380 g,Klare til bruk.,46.59,122.61,kg,ingen,417,False
+1073,7091234000730,Bønner kidney 380 g,I lake. Organisk,31.99,84.18,kg,ingen,421,True
+1074,7091234000747,Tomater hakkede 390 g,På boks.,55.19,141.51,kg,ingen,618,False
+1075,7091234000754,Tunfisk på boks 185 g,I olje.,75.5,408.11,kg,fisk,159,False
+1076,7091234000761,Bakepulver 100 g,Hevemiddel.,43.78,437.8,kg,ingen,151,False
+1077,7091234000778,Vaniljesukker 100 g,Til baking.,40.35,403.5,kg,ingen,167,False
+1078,7091234000785,Kakaopulver 200 g,Baking og drikke. Organisk,62.76,313.8,kg,ingen,289,True
+1079,7091234000792,Sjokoladedråper 200 g,Til cookies.,60.02,300.1,kg,"melk, soya",460,False
+1080,7091234000808,Gjær tørr 50 g,Til søt og grov bakst.,69.23,1384.6,kg,ingen,434,False
+1081,7091234000815,Solsikkefrø 300 g,Til topping.,43.28,144.27,kg,ingen,577,False
+1082,7091234000822,Mandler 200 g,Skåldede.,18.06,90.3,kg,nøtter,159,False
+1083,7091234000839,Hasselnøtter 200 g,Hele.,19.33,96.65,kg,nøtter,244,False
+1084,7091234000846,Valnøtter 200 g,Hakkede.,22.22,111.1,kg,nøtter,424,False
+1085,7091234000853,Rosiner 200 g,Saftige. Organisk,25.07,125.35,kg,ingen,564,True
+1086,7091234000860,Peanøttsmør 350 g,Kremet. Organisk,38.3,109.43,kg,peanøtter,483,True
+1087,7091234000877,Syltetøy jordbær 400 g,Ekstra bær. Organisk,57.41,143.52,kg,ingen,852,True
+1088,7091234000884,Leverpostei 200 g,Familieboks.,39.3,196.5,kg,ingen,922,False
+1089,7091234000891,Makrell i tomat boks 170 g,Klassiker.,21.15,124.41,kg,fisk,1167,False
+1090,7091234000907,Sjokoladepålegg 350 g,Søtt pålegg.,45.01,128.6,kg,"melk, soya, hasselnøtt, nøtter",1054,False
+1091,7091234000914,Hummus 200 g,Klar til bruk.,23.15,115.75,kg,sesam,330,False
+1092,7091234000921,Pesto grønn 190 g,Med basilikum.,64.44,339.16,kg,"nøtter, melk",1015,False
+1093,7091234000938,Majones 165 g,Klassisk. Organisk,26.55,160.91,kg,"egg, sennep",455,True
+1094,7091234000945,Syltede agurker 370 g,Skivet.,57.91,156.51,kg,sulfitt,1105,False
+1095,7091234000952,Rødbeter skivet 450 g,Syltede.,56.22,124.93,kg,ingen,1147,False
+1096,7091234000969,Appelsinjuice 1 l,Uten tilsatt sukker. Organisk,44.17,44.17,l,ingen,170,True
+1097,7091234000976,Eplejuice 1 l,Fra konsentrat.,35.78,35.78,l,ingen,250,False
+1098,7091234000983,"Brus cola 1,5 l",Med sukker. Organisk,40.24,26.83,l,ingen,207,True
+1099,7091234000990,"Brus sukkerfri 1,5 l",Uten sukker.,34.54,23.03,l,ingen,275,False
+1100,7091234001003,"Mineralvann 1,5 l",Med kullsyre.,17.79,11.86,l,ingen,315,False
+1101,7091234001010,"Vann uten kullsyre 1,5 l",Naturell. Organisk,37.84,25.23,l,ingen,196,True
+1102,7091234001027,Kakao drikkeklar 330 ml,På kartong.,16.76,50.79,l,"melk, laktose",248,False
+1103,7091234001034,Iskaffe 330 ml,Søtet.,43.84,132.85,l,"melk, laktose",222,False
+1104,7091234001041,Energidrikk 500 ml,Koffeinholdig.,23.99,47.98,l,ingen,354,False
+1105,7091234001058,Sportsdrikk 500 ml,Elektrolytter.,14.04,28.08,l,ingen,213,False
+1106,7091234001065,Frosne erter 600 g,Søte erter.,88.85,148.08,kg,ingen,239,False
+1107,7091234001072,Frosne blåbær 400 g,Høstet i skogen.,44.2,110.5,kg,ingen,521,False
+1108,7091234001089,Pizza frossen 450 g,Klassisk pepperoni.,55.8,124,kg,"hvete, gluten, melk",594,False
+1109,7091234001096,Pommes frites 750 g,Sprø i ovn.,69.61,92.81,kg,ingen,201,False
+1110,7091234001102,Kyllingnuggets 600 g,Panerte.,24.9,41.5,kg,gluten,880,False
+1111,7091234001119,Vegetarlasagne 400 g,Med spinat.,66.44,166.1,kg,"hvete, gluten, melk",327,False
+1112,7091234001126,Fiskepinner 450 g,Sprø panering.,66.68,148.18,kg,"fisk, gluten",534,False
+1113,7091234001133,Bærmiks 500 g,"Jordbær, blåbær, bringebær.",58.81,117.62,kg,ingen,396,False
+1114,7091234001140,Wokgrønnsaker 750 g,Asiatisk miks.,46.54,62.05,kg,ingen,966,False
+1115,7091234001157,Iskrem vanilje 1 kg,Kremet is.,41.07,41.07,kg,"melk, laktose",761,False
+1116,7091234001164,Potetgull salt 200 g,Tynne chips.,19.46,97.3,kg,ingen,793,False
+1117,7091234001171,Tortillachips 200 g,Maisbasert.,29.9,149.5,kg,ingen,418,False
+1118,7091234001188,Popcorn mikrobølge 270 g,3 poser.,53.19,197,kg,ingen,373,False
+1119,7091234001195,Nøttemiks 200 g,Ristet. Organisk,39.87,199.35,kg,"nøtter, peanøtter",834,True
+1120,7091234001201,Sjokoladeplate lys 200 g,Kremet.,52.84,264.2,kg,"melk, soya",440,False
+1121,7091234001218,Mørk sjokolade 70% 100 g,Intens smak.,18.96,189.6,kg,soya,225,False
+1122,7091234001225,Kjeks havre 200 g,Sprø.,31.38,156.9,kg,gluten,274,False
+1123,7091234001232,Riskaker 130 g,Saltede.,38.34,294.92,kg,ingen,399,False
+1124,7091234001249,Proteinbar 55 g,Sjokoladesmak.,20.98,381.45,kg,"melk, soya, peanøtter",871,False
+1125,7091234001256,Lakris 200 g,Myk.,48.72,243.6,kg,ingen,309,False
+1126,7091234001263,Salt fint 500 g,Jodsalt. Organisk,34.12,68.24,kg,ingen,182,True
+1127,7091234001270,Pepper sort malt 70 g,Aromatisk. Organisk,17.48,249.71,kg,ingen,81,True
+1128,7091234001287,Paprikapulver 75 g,Mild.,23.94,319.2,kg,ingen,185,False
+1129,7091234001294,Spisskummen 60 g,Malt.,36.74,612.33,kg,ingen,179,False
+1130,7091234001300,Kanel malt 70 g,Til baking.,26.44,377.71,kg,ingen,90,False
+1131,7091234001317,Oregano 15 g,Tørket.,32.55,2170,kg,ingen,120,False
+1132,7091234001324,Basilikum 12 g,Tørket. Organisk,18.24,1520,kg,ingen,69,True
+1133,7091234001331,Karri 70 g,Mild indisk blanding. Organisk,20.08,286.86,kg,ingen,188,True
+1134,7091234001348,Chiliflakes 30 g,Sterk. Organisk,16.94,564.67,kg,ingen,89,True
+1135,7091234001355,Tacokrydder 28 g,Til fredagstaco.,22.23,793.93,kg,ingen,188,False
+1136,7091234001362,Cornflakes 500 g,Sprø maisflak.,28.44,56.88,kg,ingen,630,False
+1137,7091234001379,Müsli 750 g,Med nøtter og frø.,52.97,70.63,kg,"nøtter, gluten, sesam",220,False
+1138,7091234001386,Havrefras 375 g,Fiber.,76.28,203.41,kg,gluten,505,False
+1139,7091234001393,Granola 500 g,Sprø klynger.,76.97,153.94,kg,"nøtter, gluten, sesam",629,False
+1140,7091234001409,Puffet ris 300 g,Frokost blanding.,32.74,109.13,kg,ingen,697,False
+1141,7091234001416,Knekkebrød fint 250 g,Tynne skiver.,58.48,233.92,kg,gluten,614,False
+1142,7091234001423,Protein granola 400 g,Med soyaprotein.,74.77,186.92,kg,"soya, nøtter, gluten",837,False
+1143,7091234001430,Havrekli 500 g,Til grøt. Organisk,53.47,106.94,kg,gluten,878,True
+1144,7091234001447,Chiafrø 300 g,Omega-3 kilde. Organisk,42.86,142.87,kg,ingen,672,True
+1145,7091234001454,Linfrø 300 g,Knuste.,39.64,132.13,kg,ingen,416,False
