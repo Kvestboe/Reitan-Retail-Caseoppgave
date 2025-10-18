@@ -1,0 +1,140 @@
+
+:root {
+    --primary-color-blue: #023EA5;
+    --primary-color-red: #d71f2e;
+    --secondary-color-lightblue: #bfdfff;
+    --secondary-color-lightgray: #fbf8f4;
+}
+
+@font-face {
+    font-family: "rema";
+    src: url('./assets/REMA\ 1000\ _Typografi\ DIGITAL\ bruk/._REMA-Regular.woff') format(woff);
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "rema", sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+
+header > img {
+    max-width: 90%;
+    grid-row: 1/3;
+}
+
+
+.search-bar {
+    align-self: flex-end;
+    display:flex;
+    justify-content: center;
+    margin: 0 10px;
+    flex-wrap: wrap;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: var(--secondary-color-lightblue);
+    max-width: 600px;
+    min-width: fit-content;
+    width: 40vw;
+    border: 1px solid black;
+}
+
+.search-input {
+    font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
+    color: #333333;
+    margin-right: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1 0 max-content;
+}
+
+.search-input::placeholder, .search-icon {
+    color: white;
+    font-family: "rema", sans-serif;
+}
+
+.search-icon:hover, .filter-icon:hover {
+    cursor: pointer;
+    
+}
+
+
+.filter-icon {
+    display: block;
+    background-color: var(--secondary-color-lightblue);
+    padding: 16px;
+    border-radius: 28px;
+    margin-left: 16px;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.filter-container {
+    align-self: flex-start;
+    margin-top: 32px;
+    display:none;
+    flex-wrap: wrap;
+    width: 35vw;
+    justify-content: center;
+    background-color: var(--secondary-color-lightblue);
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 32px;
+}
+
+.visible {
+    display: flex;
+    animation-name: minAnimasjon;
+    animation-duration: 1s;
+}
+
+/* .visible:not {
+    animation-name: minAnimasjon;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    få den til å gjøre animasjonen når man trykker på knappen for å fjerne filter
+} */
+
+@keyframes minAnimasjon {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+
+    
+.toggle-button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--secondary-color-lightgray); /* Default to off color */
+    border: 1px solid black;
+    color: black;
+    margin: 2px 6px;
+    border-radius: 24px;
+}
+
+.toggle-button.active {
+    background-color: var(--secondary-color-lightblue); /* Apply on color when active */
+}
