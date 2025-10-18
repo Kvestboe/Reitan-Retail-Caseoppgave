@@ -1,6 +1,6 @@
-package Brukerprofiler;
-import java.util.ArrayList;
+// package Brukerprofiler;
+// import java.util.ArrayList;
 
-public class Preferanser {
+// public class Preferanser {
 
-}
+// }

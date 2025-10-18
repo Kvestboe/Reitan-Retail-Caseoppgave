@@ -39,7 +39,7 @@ async function searchProducts() {
     const keyword = document.getElementById("searchBox").value;
     const activeFilterTexts = Array.from(document.querySelectorAll('#filters p.active')).map(p => p.textContent.trim());
     
-    const query = new URLSearchParams({ keyword, activeFilterTexts: filters.join(",")});
+    const query = new URLSearchParams({ keyword, filters: activeFilterTexts.join(",")});
     const response = await fetch("http://localhost:8080/search?" + query);
     const products = await response.json();
 

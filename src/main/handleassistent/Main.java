@@ -1,35 +1,3 @@
-/*
-import Brukerprofiler.*;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-public class Main {
-    public static void main(String[] args) {
-        FileToProduct ftp = new FileToProduct();
-        try {
-            ftp.loadFromCsv("data/products.csv");
-
-            // Create search engine with loaded products
-            ProductSearch searchEngine = new ProductSearch(ftp.getProducts());
-            String userInput = "brød";
-            List<String> filters = Arrays.asList("organic");
-            ArrayList<Product> productMatches = searchEngine.searchByKeyword(userInput, filters);
-
-            for (Product p : productMatches) {
-                System.out.println(p.getName());
-            }
-
-        }
-        catch (IOException  e) {
-            System.err.println("Kunne ikke lese filen: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
-}
-*/
 import Brukerprofiler.*;
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpExchange;
@@ -43,24 +11,39 @@ public class Main {
     public static void main(String[] args) {
         try {
             FileToProduct ftp = new FileToProduct();
-            ftp.loadFromCsv("data/products.csv");
+            ftp.loadFromCsv("data/products.csv"); 
             ProductSearch searchEngine = new ProductSearch(ftp.getProducts());
 
             // Start a tiny HTTP server on localhost:8080
             HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
+            // Create a context for /search requests
             server.createContext("/search", (HttpExchange exchange) -> {
-                String query = exchange.getRequestURI().getQuery(); // e.g. keyword=brød&filters=gluten,laktose
+                // --- NEW: Handle CORS preflight requests (OPTIONS method) ---
+                if ("OPTIONS".equalsIgnoreCase(exchange.getRequestMethod())) {
+                    // Add CORS headers so the browser knows it’s allowed
+                    exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+                    exchange.getResponseHeaders().add("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+                    exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "Content-Type");
+                    exchange.sendResponseHeaders(204, -1); // No content for OPTIONS
+                    exchange.close();
+                    return; // Stop here, don’t process further
+                }
+
+                // Extract query string from request URL
+                String query = exchange.getRequestURI().getQuery(); 
                 Map<String, String> params = parseQuery(query);
 
+                // Extract keyword and filters from query parameters
                 String keyword = params.getOrDefault("keyword", "");
                 List<String> filters = params.containsKey("filters")
                         ? Arrays.asList(params.get("filters").split(","))
                         : Collections.emptyList();
 
+                // Perform search
                 ArrayList<Product> results = searchEngine.searchByKeyword(keyword, filters);
 
-                // Convert results to JSON (simple manual version)
+                // Convert results to JSON manually
                 StringBuilder json = new StringBuilder("[");
                 for (int i = 0; i < results.size(); i++) {
                     Product p = results.get(i);
@@ -69,6 +52,12 @@ public class Main {
                 }
                 json.append("]");
 
+                // --- IMPORTANT: Add CORS headers to every response ---
+                exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+                exchange.getResponseHeaders().add("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+                exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "Content-Type");
+
+                // Send JSON response
                 exchange.getResponseHeaders().add("Content-Type", "application/json; charset=UTF-8");
                 exchange.sendResponseHeaders(200, json.toString().getBytes().length);
                 try (OutputStream os = exchange.getResponseBody()) {
@@ -85,6 +74,7 @@ public class Main {
         }
     }
 
+    // Helper method to parse query string into key-value pairs
     private static Map<String, String> parseQuery(String query) {
         Map<String, String> map = new HashMap<>();
         if (query != null) {
