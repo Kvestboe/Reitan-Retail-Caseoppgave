@@ -26,21 +26,5 @@ public class Main {
             System.err.println("Kunne ikke lese filen: " + e.getMessage());
             e.printStackTrace();
         }
-
-        // Testing av søkefunksjon
-        /*
-        ArrayList<Product> productMatches = new ArrayList<>();
-        String userInput = "hvete";
-        System.out.println();
-        for (Product p : ftp.getProducts()) {
-            if (p.getName().toLowerCase().contains(userInput) || p.getDescription().toLowerCase().contains(userInput)) {
-                productMatches.add(p);
-            }
-        }
-
-        for (Product p : productMatches) {
-            System.out.println(p.getName());
-        }
-        */
     }
 }
