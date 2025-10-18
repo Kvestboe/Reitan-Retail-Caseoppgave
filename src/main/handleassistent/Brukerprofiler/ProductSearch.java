@@ -19,37 +19,31 @@ public class ProductSearch {
     }
 
     // Søker etter produkter innen en bevisst kategori (filter)
-    public ArrayList<Product> searchByKeyword(String keyword, String filter) {
+    public ArrayList<Product> searchByKeyword(String keyword, List<String> filters) {
         ArrayList<Product> matches = new ArrayList<>();
         String lowerKeyword = keyword.toLowerCase();
 
         for (Product p : products) {
             if (!matchesKeyword(p, lowerKeyword)) continue;
 
-            if (filter == null) {
-                matches.add(p);
-            } else {
-                switch (filter.toLowerCase()) {
-                    case "laktose":
-                        if (p.getAllergens().contains("laktose")) matches.add(p);
+            boolean passesFilters = true;
+
+            if (filters != null && !filters.isEmpty()) {
+                for (String f : filters) {
+                    String lowerFilter = f.toLowerCase();
+
+                    // Example: exclude products containing this allergen
+                    if (p.getAllergens().contains(lowerFilter)) {
+                        passesFilters = false;
                         break;
-                    case "gluten":
-                        if (!p.getAllergens().contains("gluten")) matches.add(p);
-                        break;
+                    }
                 }
             }
-        }
-        return matches;
-        /*
-        ArrayList<Product> matches = new ArrayList<>();
-        String lowerKeyword = keyword.toLowerCase();
 
-        for (Product p : products) {
-            if (p.getName().toLowerCase().contains(lowerKeyword) || p.getDescription().toLowerCase().contains(lowerKeyword)) {
+            if (passesFilters) {
                 matches.add(p);
             }
         }
         return matches;
-         */
     }
 }

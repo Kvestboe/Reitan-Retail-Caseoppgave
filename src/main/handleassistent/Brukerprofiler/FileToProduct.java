@@ -15,13 +15,13 @@ public class FileToProduct {
 
                 Product p = new Product(
                         Integer.parseInt(fields[0]),    // productId
-                        Long.parseLong(fields[1]),    // gtin
+                        Long.parseLong(fields[1]),      // gtin
                         fields[2],                      // name
                         fields[3],                      // description
                         Double.parseDouble(fields[4]),  // price
                         Double.parseDouble(fields[5]),  // pricePerUnit
                         fields[6],                      // unit
-                        fields[7],                      // allergens
+                        new ArrayList<>(Arrays.asList(fields[7].split("\\s+"))), // Allergens                     // allergens
                         fields[8],                      // carbonFootprintGram
                         Boolean.parseBoolean(fields[9]) // organic
                 );

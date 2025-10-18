@@ -1,4 +1,5 @@
 package Brukerprofiler;
+import java.util.ArrayList;
 
 
 public class Product {
@@ -9,10 +10,10 @@ public class Product {
     private final double price;
     private final double pricePerUnit;
     private final String unit;
-    private final String allergens;
+    private final ArrayList<String> allergens;
     private final String carbonFootprintGram;
     private final boolean organic;
-    public Product(int productId, long gtin, String name, String description, double price, double pricePerUnit, String unit, String allergens, String carbonFootprintGram, boolean organic) {
+    public Product(int productId, long gtin, String name, String description, double price, double pricePerUnit, String unit, ArrayList<String> allergens, String carbonFootprintGram, boolean organic) {
         this.productId = productId;
         this.gtin = gtin;
         this.name = name;
@@ -33,7 +34,7 @@ public class Product {
     public double getPrice() { return price; }
     public double getPricePerUnit() { return pricePerUnit; }
     public String getUnit() { return unit; }
-    public String getAllergens() { return allergens; }
+    public ArrayList<String> getAllergens() { return allergens; }
     public String getCarbonFootprintGram() { return carbonFootprintGram; }
     public boolean getOrganic() { return organic; }
 }
