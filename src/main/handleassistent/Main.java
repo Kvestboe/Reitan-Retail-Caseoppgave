@@ -1,4 +1,5 @@
 import Brukerprofiler.*;
+import recepies.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,20 +26,28 @@ public class Main {
             e.printStackTrace();
         }
 
-        // Testing av søkefunksjon
-        /*
-        ArrayList<Product> productMatches = new ArrayList<>();
-        String userInput = "hvete";
-        System.out.println();
-        for (Product p : ftp.getProducts()) {
-            if (p.getName().toLowerCase().contains(userInput) || p.getDescription().toLowerCase().contains(userInput)) {
-                productMatches.add(p);
+
+        FileToRecipe ftr = new FileToRecipe();
+
+        try {
+            ftr.loadFromCsv("data/oppskrifter.csv");
+
+            // Create search engine with loaded products
+            RecipeSearch searchEngine = new RecipeSearch(ftr.getRecipe());
+            String userInput = "melk";
+            String filter = "null";
+            ArrayList<Recipe> recipeMatches = searchEngine.searchByKeyword(userInput, filter);
+
+            for (Recipe r : recipeMatches) {
+                System.out.println(r.getTitle());
             }
+
+        }
+        catch (IOException  e) {
+            System.err.println("Kunne ikke lese filen: " + e.getMessage());
+            e.printStackTrace();
         }
 
-        for (Product p : productMatches) {
-            System.out.println(p.getName());
-        }
-        */
+
     }
 }
