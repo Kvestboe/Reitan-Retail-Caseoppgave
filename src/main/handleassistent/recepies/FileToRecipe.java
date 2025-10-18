@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class FileToRecipe {
     private ArrayList<Recipe> recipes = new ArrayList<>();
 
+
     public void loadFromCsv(String filename) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line = reader.readLine(); // skip header
@@ -17,7 +18,7 @@ public class FileToRecipe {
 
                 Recipe p = new Recipe(
                         fields[0],                      // title
-                        fields[1],                      // ingredients
+                        fields[1].split(";"),                      // ingredients
                         fields[2]                       // url
                 );
 
