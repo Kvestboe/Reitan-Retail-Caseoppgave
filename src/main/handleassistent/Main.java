@@ -1,6 +1,7 @@
 import Brukerprofiler.FileToProduct;
 import Brukerprofiler.Inventory;
 import Brukerprofiler.Product;
+import Brukerprofiler.ProductSearch;
 
 import java.io.IOException;
 import java.io.FileNotFoundException;
@@ -14,9 +15,7 @@ public class Main {
 
             // Create search engine with loaded products
             ProductSearch searchEngine = new ProductSearch(ftp.getProducts());
-
-            // Example search
-            String userInput = "hvete";
+            String userInput = "melk";
             ArrayList<Product> productMatches = searchEngine.searchByKeyword(userInput);
 
             for (Product p : productMatches) {

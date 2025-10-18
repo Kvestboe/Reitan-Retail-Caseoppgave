@@ -1,5 +1,6 @@
 package Brukerprofiler;
 
+
 public class Product {
     private final String productId;
     private final String gtin;
