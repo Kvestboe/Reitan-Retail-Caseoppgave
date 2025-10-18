@@ -1,10 +1,6 @@
-import Brukerprofiler.FileToProduct;
-import Brukerprofiler.Inventory;
-import Brukerprofiler.Product;
-import Brukerprofiler.ProductSearch;
+import Brukerprofiler.*;
 
 import java.io.IOException;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class Main {
@@ -15,8 +11,9 @@ public class Main {
 
             // Create search engine with loaded products
             ProductSearch searchEngine = new ProductSearch(ftp.getProducts());
-            String userInput = "melk";
-            ArrayList<Product> productMatches = searchEngine.searchByKeyword(userInput);
+            String userInput = "brød";
+            String filter = "gluten";
+            ArrayList<Product> productMatches = searchEngine.searchByKeyword(userInput, filter);
 
             for (Product p : productMatches) {
                 System.out.println(p.getName());

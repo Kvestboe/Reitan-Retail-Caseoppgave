@@ -14,16 +14,16 @@ public class FileToProduct {
                 String[] fields = line.split(",");
 
                 Product p = new Product(
-                        fields[0],                      // productId
-                        fields[1],                      // gtin
+                        Integer.parseInt(fields[0]),    // productId
+                        Long.parseLong(fields[1]),    // gtin
                         fields[2],                      // name
                         fields[3],                      // description
-                        fields[4],  // price
-                        fields[5],  // pricePerUnit
+                        Double.parseDouble(fields[4]),  // price
+                        Double.parseDouble(fields[5]),  // pricePerUnit
                         fields[6],                      // unit
                         fields[7],                      // allergens
-                        fields[8],    // carbonFootprintGram
-                        fields[9] // organic
+                        fields[8],                      // carbonFootprintGram
+                        Boolean.parseBoolean(fields[9]) // organic
                 );
 
                 products.add(p);
