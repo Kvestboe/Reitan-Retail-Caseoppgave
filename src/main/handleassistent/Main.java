@@ -11,11 +11,18 @@ public class Main {
         FileToProduct ftp = new FileToProduct();
         try {
             ftp.loadFromCsv("data/products.csv");
-            int i = 0;
-            for (Product p : ftp.getProducts()) {
-                i++;
-                System.out.println(p.getOrganic() + " " + i);
+
+            // Create search engine with loaded products
+            ProductSearch searchEngine = new ProductSearch(ftp.getProducts());
+
+            // Example search
+            String userInput = "hvete";
+            ArrayList<Product> productMatches = searchEngine.searchByKeyword(userInput);
+
+            for (Product p : productMatches) {
+                System.out.println(p.getName());
             }
+
         }
         catch (IOException  e) {
             System.err.println("Kunne ikke lese filen: " + e.getMessage());
@@ -23,8 +30,9 @@ public class Main {
         }
 
         // Testing av søkefunksjon
+        /*
         ArrayList<Product> productMatches = new ArrayList<>();
-        String userInput = "nøtter";
+        String userInput = "hvete";
         System.out.println();
         for (Product p : ftp.getProducts()) {
             if (p.getName().toLowerCase().contains(userInput) || p.getDescription().toLowerCase().contains(userInput)) {
@@ -35,5 +43,6 @@ public class Main {
         for (Product p : productMatches) {
             System.out.println(p.getName());
         }
+        */
     }
 }
