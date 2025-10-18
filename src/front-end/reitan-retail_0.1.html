@@ -7,32 +7,37 @@
         
     </head>
     <body>
-        <div class="scroll-wrapper">
-
-        </div>
         <header >
-            <img src="./assets/Rema-1000.png" alt="Logo av Rema 1000">
-            <div class="search-bar">
-                <div class="flex search">
-                    <input type="text" class="search-input" id="searchBox" placeholder="Søk etter varer...">
-                    <img src="./assets/Søkelogo.png" class="search-icon" onclick="searchProducts()">
+            <div class="over">
+                <img src="./assets/Rema-1000.png" alt="Logo av Rema 1000">
+                <div class="search-bar">
+                    <div class="flex">
+                        <div class="search">
+                            <input type="text" class="search-input" id="searchBox" placeholder="Søk etter varer...">
+                            <img src="./assets/Søkelogo.png" class="search-icon" onclick="searchProducts()">
+                        </div>
+                        <img src="./assets/Filter.png" alt="" class="filter-icon" id="filter-button">
+                        
+                    </div>
+                    <div class="filter-container" id="filters">
+                        <!-- <p class="filter toggle-button">ORGANISK</p> -->
+                        <p class="filter toggle-button">Gluten</p>
+                        <p class="filter toggle-button">Hvete</p>
+                        <p class="filter toggle-button">Laktose</p>
+                        <p class="filter toggle-button">Melk</p>
+                        <p class="filter toggle-button">Egg</p>
+                        <p class="filter toggle-button">Fisk</p>
+                        <p class="filter toggle-button">Skalldyr</p>
+                        <p class="filter toggle-button">Sulfitt</p>
+                        <p class="filter toggle-button">Sesam</p>
+                    </div>
                 </div>
-                <img src="./assets/Filter.png" alt="" class="filter-icon" id="filter-button">
-                <div class="filter-container" id="filters">
-                    <p class="filter toggle-button">ORGANISK</p>
-                    <p class="filter toggle-button">GLUTEN</p>
-                    <p class="filter toggle-button">HVETE</p>
-                    <p class="filter toggle-button">LAKTOSE</p>
-                    <p class="filter toggle-button">MELK</p>
-                    <p class="filter toggle-button">EGG</p>
-                    <p class="filter toggle-button">FISK</p>
-                    <p class="filter toggle-button">SKALLDYR</p>
-                    <p class="filter toggle-button">SULFITT</p>
-                    <p class="filter toggle-button">SESAM</p>
-                </div>
-                <div id="results"></div>
-            </div>
 
+            </div>
+            <div id="results">
+                
+            </div>
+ 
         </header>
         <section>
 

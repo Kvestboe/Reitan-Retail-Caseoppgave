@@ -43,6 +43,17 @@ async function searchProducts() {
     const response = await fetch("http://localhost:8080/search?" + query);
     const products = await response.json();
 
-    document.getElementById("results").innerHTML = products.map(p => `<p>${p.name}</p>`).join("");
+    // document.getElementById("result-container").innerHTML = `<p>Søkeresultater</p><div id="results"></div>`
+    document.getElementById("results").innerHTML = `<p id="result-header">Søkeresultater</p>` + products.map(p => `<p onclick="returnSelf(this)" class="resultat-p">${p.name}</p>`).join("");
+    document.querySelector("header").innerHTML += `<div id="handleliste">
+                <p>Handleliste:</p>
+            </div>`
 
+}
+
+liste = [];
+
+function returnSelf(element) {
+    liste.push(element.textContent);
+    document.getElementById("handleliste").innerHTML += "<p> - "+liste[liste.length-1]+"</p>"
 }
