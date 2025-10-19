@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
         
     </head>
-    <body>
-        <header >
+    <body class="w">
+        <header>
             <div class="over">
                 <img src="./assets/Rema-1000.png" alt="Logo av Rema 1000">
                 <div class="search-bar">
@@ -39,8 +39,20 @@
             </div>
  
         </header>
-        <section>
-
+        <section class="second-screen">
+            <div>
+                <p class="title">Oppskriftsøk:</p>
+                <div class="search input">
+                    <input type="text" class="search-input" id="recipie-input" placeholder="Søk etter oppskrifter...">
+                    <img src="./assets/Søkelogo.png" class="search-icon" onclick="sendList()">
+                </div>
+            </div>
+            <div id="output">
+                <div class="recipie">
+                    <p><a href="http://">Brødbakst</a></p>
+                    <p>brød, mel, melk,</p>
+                </div>
+            </div>
         </section>
 
         <script src="main.js"></script>

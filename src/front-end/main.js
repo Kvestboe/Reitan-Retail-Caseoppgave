@@ -44,10 +44,8 @@ async function searchProducts() {
     const products = await response.json();
 
     // document.getElementById("result-container").innerHTML = `<p>Søkeresultater</p><div id="results"></div>`
-    document.getElementById("results").innerHTML = `<p id="result-header">Søkeresultater</p>` + products.map(p => `<p onclick="returnSelf(this)" class="resultat-p">${p.name}</p>`).join("");
-    document.querySelector("header").innerHTML += `<div id="handleliste">
-                <p>Handleliste:</p>
-            </div>`
+    document.getElementById("results").innerHTML = `<p id="result-header">Søkeresultater</p>` + products.map(p => `<p onclick="returnSelf(this)" class="result-p">${p.name}</p>`).join("");
+    document.querySelector("header").innerHTML += `<div id="handleliste"><p>Handleliste:</p></div>`
 
 }
 
@@ -56,4 +54,13 @@ liste = [];
 function returnSelf(element) {
     liste.push(element.textContent);
     document.getElementById("handleliste").innerHTML += "<p> - "+liste[liste.length-1]+"</p>"
+
+}
+
+function sendList() {
+    const query = liste.join(",");
+    const url = `https://localhost:8080/search?ingredients=${encodeURIComponent(query)}`
+
+    fetch (url).then(response => response.json).then(data => {console.log("Search results:", data)}).catch(err => console.error("Error:", err));
+
 }

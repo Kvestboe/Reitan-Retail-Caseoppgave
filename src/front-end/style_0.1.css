@@ -66,6 +66,7 @@ div > img {
 
 .flex {
     display: flex;
+    justify-content: center;
 }
 
 .search {
@@ -174,10 +175,12 @@ div > img {
     text-decoration: none;
     font-size: 2em;
     transition-property: none;
+    padding: 20px;
 }
 .result-p {
     background-color: var(--secondary-color-lightblue);
     padding: 10px;
+    padding-left: 20px;
     margin: 6px; 
     border-radius: 12px;
     /* text-align: center; */
@@ -190,7 +193,7 @@ div > img {
 
 
 #results > p:hover {
-    padding-left: 20px;
+    padding-left: 40px;
     cursor: pointer;
     transition-property: padding-left;
     transition-duration: 0.1s;
@@ -198,6 +201,10 @@ div > img {
 
 }
 
+#results > p:first-child:hover {
+    padding-left: 20px;
+    cursor:auto;
+}
 
 
 #results {
@@ -236,5 +243,52 @@ div > img {
 #handleliste > p:first-child {
     font-weight: bold;
     font-size: 2em;
+
 }
 
+
+.second-screen {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-left: 40px;
+    background-color: var(--secondary-color-lightgray);
+}
+
+.title {
+    font-size: 3em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: 40px;
+}
+
+.input {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: min-content;
+}
+
+.recipie {
+    background-color: var(--secondary-color-lightblue);
+    height: max-content;
+    height: max-content;
+    min-width: max-content;
+    max-width: 600px;
+    /* width: 100px; */
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+.recipie > p:first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+a {
+    color: black;
+}
